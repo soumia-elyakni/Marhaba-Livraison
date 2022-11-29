@@ -1,0 +1,255 @@
+.brand {
+   padding : 20px;
+   background: rgb(226,40,40);
+   background: linear-gradient(227deg, rgba(226,40,40,0.9308765742625175) 0%, rgba(229,106,46,1) 7%, rgba(230,123,47,1) 13%, rgba(231,142,48,1) 22%, rgba(234,179,53,1) 31%, rgba(236,206,56,0.9953023445706407) 41%, rgba(242,201,66,0.9953023445706407) 48%, rgba(255,213,0,0.9644900196406687) 61%, rgba(255,174,0,1) 70%, rgba(255,164,0,1) 79%, rgba(255,136,0,1) 86%, rgba(255,70,0,1) 94%, rgba(255,3,0,0.9420810560552346) 100%);
+   background-size: cover;
+   background-position: center center;
+   color: #fff;
+   min-height: 540px;
+   position: relative;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+   transition: all 0.6s cubic-bezier(1.000, -0.375, 0.285, 0.995);
+   z-index: 9999
+}
+
+   .brand.active{
+     width: 100%
+    }
+
+   .brand::before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* background: rgba(0, 0, 0, 0.85); */
+      z-index: -1
+    }
+
+   a.logo{     
+      color: #f95959;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1em }
+
+      a.span {
+         font-size: 30px;
+         color: #fff;
+         transform: translateX(-5px);
+         display: inline-block
+        }
+
+   .heading {
+      position: absolute;
+      top : 10%;
+      /* transform: translate(-50%, -50%); */
+      text-align: center;
+      transition: all 0.6s
+   }
+
+      h2{
+         font-size: 70px;
+         font-weight: 700;
+         /* text-transform: uppercase; */
+         margin-bottom: 0
+        }
+
+      p{ 
+         font-size: 15px;
+         font-weight: 300;
+         /* text-transform: uppercase; */
+         letter-spacing: 2px;
+         white-space: 4px;
+         font-family: 'Raleway', sans-serif
+        }
+
+
+
+
+.form{ 
+    position: relative
+    }
+ 
+    .form-peice {
+       background: #fff;
+       min-height: 480px;
+       margin-top: 30px;
+       box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+       color: #bbbbbb;
+       padding: 30px 0 60px;
+       transition: all 0.9s cubic-bezier(1.000, -0.375, 0.285, 0.995);
+       position: absolute;
+       top: 0;
+       left: -30%;
+       width: 130%;
+       overflow: hidden
+       }
+       /* .form-peice.switched{
+          transform: translateX(-100%);
+          width: 100%;
+         left: 0
+      } */
+ 
+    form {
+       padding: 0 40px;
+       margin: 0;
+       width: 70%;
+       position: absolute;
+       top: 50%;
+       left: 60%;
+       /* transform: translate(-50%, -50%); */
+       /* text-transform: none; */
+      }
+ 
+       .form-group{
+          margin-bottom: 5px;
+          position: relative; 
+          text-transform: none !important;
+         }
+ 
+ 
+       label{
+          font-size: 12px;
+          font-weight: 400;
+          font-family: 'Montserrat', sans-serif;
+          transform: translateY(40px);
+          transition: all 0.4s;
+          cursor: text;
+          z-index: -1
+          }
+ 
+          label.active{
+             /* transform: translateY(10px); */
+             font-size: 10px
+             }
+ 
+          label.fontSwitch {
+             font-family: 'Raleway', sans-serif !important;
+             font-weight: 600
+          }
+             
+ 
+       input:not([type=submit]){  
+          background: none;
+          outline: none;
+          border: none;
+          display: block;
+          padding: 10px 0;
+          width: 100%;
+          border-bottom: 1px solid #eee;
+          color: #444;
+          font-size: 15px;
+          font-family: 'Raleway' sans-serif;
+          z-index: 1
+         }
+          input.hasError{
+             border-color: #f95959
+         }
+ 
+       /* span.error{
+          color: #f95959;
+          font-family:'Raleway', sans-serif;
+          font-size: 12px;
+          position: absolute;
+          bottom: -20px;
+          right: 0;
+          display: none
+           } */
+ 
+       input[type=password]{
+          color: 'Montserrat', sans-serif;
+         }
+ 
+       .CTA{
+          margin-top: 30px; }
+          input {
+             font-size: 12px;
+             padding: 5px 30px;
+             background: #f95959;
+             color: #fff;
+             border-radius: 30px;
+             margin-right: 20px;
+             border: none;
+             /* font-family: 'Raleway', sans-serif; */
+         }
+ 
+          /* a.switch{
+             font-size: 13px;
+             font-weight: 400;
+             font-family: 'Raleway', sans-serif;
+             color:#bbbbbb;
+             text-decoration: underline;
+             transition: all 0.3s;
+             } */
+ 
+             a:hover{
+                color: #f95959
+              }
+ 
+ 
+ 
+ 
+ @media (max-width: 768px){
+    .container{
+       overflow: hidden }
+    section#formHolder {
+       padding: 0
+     }
+ 
+       div.brand{
+          min-height: 200px !important
+         }
+          div.brand.active{
+              min-height: 100vh !important
+             }
+ 
+          .heading.active {
+             top: 200px;
+             left: 50%;
+             transform: translate(-50%, -50%)
+ }
+          .success-msg>p { font-size: 16px}
+          .success-msg>a
+               { padding: 5px 30px;
+                font-size: 10px   }
+ 
+ 
+       .form
+         { width: 80vw;
+          min-height: 500px;
+          margin-left: 10vw
+         }
+          .form-peice{
+             margin: 0;
+             top: 0;
+             left: 0;
+             width: 100% !important;
+             /* transition: all .5s ease-in-out */
+         }
+ 
+             /* .form-peice.switched{
+                transform: translateY(-100%);
+                width: 100%;
+                left: 0; } */
+              form {
+               width: 100% !important;
+                padding: 60px;
+                left: 50%  
+              }
+                
+             }
+ 
+    
+ 
+ @media (max-width: 700px){
+    section#formHolder .form{
+       width: 100vw;
+       margin-left: 0
+ }
+    h2{
+       font-size: 50px !important
+     }
+ }

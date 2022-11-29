@@ -1,0 +1,106 @@
+/* .auth {
+    background: rgb(226,40,40);
+    background: linear-gradient(227deg, rgba(226,40,40,0.9308765742625175) 0%, rgba(229,106,46,1) 7%, rgba(230,123,47,1) 13%, rgba(231,142,48,1) 22%, rgba(234,179,53,1) 31%, rgba(236,206,56,0.9953023445706407) 41%, rgba(242,201,66,0.9953023445706407) 48%, rgba(255,213,0,0.9644900196406687) 61%, rgba(255,174,0,1) 70%, rgba(255,164,0,1) 79%, rgba(255,136,0,1) 86%, rgba(255,70,0,1) 94%, rgba(255,3,0,0.9420810560552346) 100%);
+} */
+
+.brand {
+   padding : 20px;
+   background: rgb(226,40,40);
+   background: linear-gradient(227deg, rgba(226,40,40,0.9308765742625175) 0%, rgba(229,106,46,1) 7%, rgba(230,123,47,1) 13%, rgba(231,142,48,1) 22%, rgba(234,179,53,1) 31%, rgba(236,206,56,0.9953023445706407) 41%, rgba(242,201,66,0.9953023445706407) 48%, rgba(255,213,0,0.9644900196406687) 61%, rgba(255,174,0,1) 70%, rgba(255,164,0,1) 79%, rgba(255,136,0,1) 86%, rgba(255,70,0,1) 94%, rgba(255,3,0,0.9420810560552346) 100%);
+   background-size: cover;
+   background-position: center center;
+   color: #fff;
+   min-height: 540px;
+   position: relative;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+   transition: all 0.6s cubic-bezier(1.000, -0.375, 0.285, 0.995);
+   z-index: 9999
+}
+
+   .brand.active{
+     width: 100%
+    }
+
+   .brand::before{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* background: rgba(0, 0, 0, 0.85); */
+      z-index: -1
+    }
+
+   a.logo{     
+      color: #f95959;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      line-height: 1em }
+
+      a.span {
+         font-size: 30px;
+         color: #fff;
+         transform: translateX(-5px);
+         display: inline-block
+        }
+
+   .heading {
+      position: absolute;
+      top : 10%;
+      /* transform: translate(-50%, -50%); */
+      text-align: center;
+      transition: all 0.6s
+   }
+
+  
+
+      h2{
+         font-size: 70px;
+         font-weight: 700;
+         text-transform: uppercase;
+         margin-bottom: 0
+        }
+
+      p{ 
+         font-size: 15px;
+         font-weight: 300;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         white-space: 4px;
+         font-family: 'Raleway', sans-serif
+        }
+
+   /* .success-msg
+      width: 100%
+      text-align: center
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      margin-top: 60px
+
+      p
+         font-size: 25px
+         font-weight: 400
+         font-family: $mainFont
+
+      a
+         font-size: 12px
+         text-transform: uppercase
+         padding: 8px 30px
+         background: $primaryColor
+         text-decoration: none
+         color: #fff
+         border-radius: 30px
+
+      p, a
+         transition: all 0.9s
+         transform: translateY(20px)
+         opacity: 0
+
+         &.active
+            transform: translateY(0)
+            opacity: 1 */
